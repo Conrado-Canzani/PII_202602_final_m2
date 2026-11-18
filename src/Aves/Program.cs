@@ -8,9 +8,14 @@ public class Program
 
         foreach (Ave ave in aves)
         {
+            Console.WriteLine($"Tipo de ave: {ave.GetType().Name}");
+
             ave.Comer();
-            ave.Volar();
-            ave.Cantar();
+            if (ave is not Pinguino)
+            {
+                ave.Volar();
+                ave.Cantar();
+            }
         }
     }
 }
