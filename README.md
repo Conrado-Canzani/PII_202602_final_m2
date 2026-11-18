@@ -14,6 +14,6 @@ dotnet run --project src/Aves
 
 2. En esa branch, corrija el diseño para que respete el principio que identificó en la Parte I. El programa debe ejecutarse sin lanzar excepciones y cada ave debe conservar únicamente los comportamientos que realmente tiene: el canario come, vuela y canta; el pingüino come.
 
-3. Al terminar, suba la branch a su branch.
+3. Al terminar, suba que su branch quede subida al repositorio.
 
 No hagan el push a **main**!!! Tiene que ser en su rama.
