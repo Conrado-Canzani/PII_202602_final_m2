@@ -4,18 +4,26 @@ public class Program
 {
     public static void Main()
     {
-        List<Ave> aves = new List<Ave> { new Canario(), new Pinguino() };
+        Canario canario = new Canario();
+        Pinguino pinguino = new Pinguino();
+
+        List<Ave> aves = new List<Ave> { canario, pinguino };
+        List<Ave> avesVoladoras = new List<Ave> { canario };
+        List<Ave> avesCantoras = new List<Ave> { canario };
 
         foreach (Ave ave in aves)
         {
-            Console.WriteLine($"Tipo de ave: {ave.GetType().Name}");
-
             ave.Comer();
-            if (ave is not Pinguino)
-            {
-                ave.Volar();
-                ave.Cantar();
-            }
+        }
+
+        foreach (Ave volador in avesVoladoras)
+        {
+            volador.Volar();
+        }
+
+        foreach (Ave cantor in avesCantoras)
+        {
+            cantor.Cantar();
         }
     }
 }
