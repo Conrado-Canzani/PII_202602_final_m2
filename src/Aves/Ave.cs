@@ -1,6 +1,6 @@
 namespace Aves;
 
-public class Ave
+public class Ave : IAnimal
 {
     public string Nombre { get; }
 

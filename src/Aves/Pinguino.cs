@@ -1,16 +1,16 @@
 namespace Aves;
 
-public class Pinguino : Ave
+public class Pinguino : IAnimal
 {
-    public Pinguino() : base("Pingüino") { }
+    public string Nombre { get; }
 
-    public override void Volar()
+    public Pinguino ()
     {
-        throw new NotSupportedException("El pingüino no puede volar.");
+        this.Nombre = "Pinguino";
     }
-
-    public override void Cantar()
+    public virtual void Comer()
     {
-        throw new NotSupportedException("El pingüino no puede cantar.");
+        Console.WriteLine($"{this.Nombre} está comiendo.");
     }
 }
+

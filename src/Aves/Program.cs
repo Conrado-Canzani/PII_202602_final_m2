@@ -7,11 +7,11 @@ public class Program
         Canario canario = new Canario();
         Pinguino pinguino = new Pinguino();
 
-        List<Ave> aves = new List<Ave> { canario, pinguino };
+        List<IAnimal> aves = new List<IAnimal> { canario, pinguino };
         List<Ave> avesVoladoras = new List<Ave> { canario };
         List<Ave> avesCantoras = new List<Ave> { canario };
 
-        foreach (Ave ave in aves)
+        foreach (IAnimal ave in aves)
         {
             ave.Comer();
         }
